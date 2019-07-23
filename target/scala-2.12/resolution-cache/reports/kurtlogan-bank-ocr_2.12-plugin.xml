@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="kurtlogan"
+		module="bank-ocr_2.12"
+		revision="0.1.0-SNAPSHOT"
+		conf="plugin"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190723093418"/>
+	<dependencies>
+		<module organisation="org.scalameta" name="semanticdb-scalac_2.12.6">
+			<revision name="4.1.9" status="release" pubdate="20190426082755" resolver="public" artresolver="public" homepage="https://github.com/scalameta/scalameta" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD" url="https://github.com/scalameta/scalameta/blob/master/LICENSE.md"/>
+				<metadata-artifact status="successful" details="" size="2879" time="103" location="/home/kurtlogan/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.6/ivy-4.1.9.xml" searched="true" original-local-location="/home/kurtlogan/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.6/ivy-4.1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.12.6/4.1.9/semanticdb-scalac_2.12.6-4.1.9.pom"/>
+				<caller organisation="kurtlogan" name="bank-ocr_2.12" conf="plugin" rev="4.1.9" rev-constraint-default="4.1.9" rev-constraint-dynamic="4.1.9" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="semanticdb-scalac_2.12.6" type="jar" ext="jar" status="successful" details="" size="12705413" time="729" location="/home/kurtlogan/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.6/jars/semanticdb-scalac_2.12.6-4.1.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.12.6/4.1.9/semanticdb-scalac_2.12.6-4.1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="pprint_2.12">
+			<revision name="0.5.3" status="release" pubdate="20170912205126" resolver="public" artresolver="public" homepage="https://github.com/lihaoyi/PPrint" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="MIT" url="http://www.opensource.org/licenses/mit-license.html"/>
+				<metadata-artifact status="successful" details="" size="2463" time="94" location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/pprint_2.12/ivy-0.5.3.xml" searched="true" original-local-location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/pprint_2.12/ivy-0.5.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.5.3/pprint_2.12-0.5.3.pom"/>
+				<caller organisation="org.scalameta" name="semanticdb-scalac_2.12.6" conf="default, compile, runtime, master" rev="0.5.3" rev-constraint-default="0.5.3" rev-constraint-dynamic="0.5.3" callerrev="4.1.9"/>
+				<artifacts>
+					<artifact name="pprint_2.12" type="jar" ext="jar" status="successful" details="" size="150484" time="531" location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/pprint_2.12/jars/pprint_2.12-0.5.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.5.3/pprint_2.12-0.5.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="fansi_2.12">
+			<revision name="0.2.5" status="release" pubdate="20170912201145" resolver="public" artresolver="public" homepage="https://github.com/lihaoyi/fansi" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="MIT" url="http://www.opensource.org/licenses/mit-license.html"/>
+				<metadata-artifact status="successful" details="" size="1856" time="95" location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/fansi_2.12/ivy-0.2.5.xml" searched="true" original-local-location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/fansi_2.12/ivy-0.2.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.5/fansi_2.12-0.2.5.pom"/>
+				<caller organisation="com.lihaoyi" name="pprint_2.12" conf="compile, runtime" rev="0.2.5" rev-constraint-default="0.2.5" rev-constraint-dynamic="0.2.5" callerrev="0.5.3"/>
+				<artifacts>
+					<artifact name="fansi_2.12" type="jar" ext="jar" status="successful" details="" size="64299" time="475" location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/fansi_2.12/jars/fansi_2.12-0.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.5/fansi_2.12-0.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="sourcecode_2.12">
+			<revision name="0.1.4" status="release" pubdate="20170709004037" resolver="public" artresolver="public" homepage="https://github.com/lihaoyi/sourcecode" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="MIT" url="http://www.opensource.org/licenses/mit-license.html"/>
+				<metadata-artifact status="successful" details="" size="1944" time="92" location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/sourcecode_2.12/ivy-0.1.4.xml" searched="true" original-local-location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/sourcecode_2.12/ivy-0.1.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.4/sourcecode_2.12-0.1.4.pom"/>
+				<caller organisation="com.lihaoyi" name="pprint_2.12" conf="compile, runtime" rev="0.1.4" rev-constraint-default="0.1.4" rev-constraint-dynamic="0.1.4" callerrev="0.5.3"/>
+				<caller organisation="com.lihaoyi" name="fansi_2.12" conf="compile, runtime" rev="0.1.4" rev-constraint-default="0.1.4" rev-constraint-dynamic="0.1.4" callerrev="0.2.5"/>
+				<artifacts>
+					<artifact name="sourcecode_2.12" type="bundle" ext="jar" status="successful" details="" size="110958" time="556" location="/home/kurtlogan/.ivy2/cache/com.lihaoyi/sourcecode_2.12/bundles/sourcecode_2.12-0.1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.4/sourcecode_2.12-0.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.6" status="release" pubdate="20180427094006" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.6/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/kurtlogan/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom"/>
+				<caller organisation="com.lihaoyi" name="pprint_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.5.3"/>
+				<caller organisation="org.scalameta" name="semanticdb-scalac_2.12.6" conf="default, compile, runtime, master" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="4.1.9"/>
+				<caller organisation="com.lihaoyi" name="fansi_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.2.5"/>
+				<caller organisation="com.lihaoyi" name="sourcecode_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.1.4"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5267302" time="0" location="/home/kurtlogan/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
