@@ -2,8 +2,6 @@ package bankocr
 
 import org.scalatest._
 
-import scala.util.Success
-
 class MainSpec extends FreeSpec with Matchers {
 
   val parser = new Parser
@@ -25,16 +23,19 @@ class MainSpec extends FreeSpec with Matchers {
     case (input, result) =>
       s"parse $result" in {
 
-        parser.parse(parser.numbers, input).get shouldBe result
+        parser.parse(parser.number, input).get shouldBe result
       }
   }
 
   "parse a line of numbers" in {
-    val lineOfNumbers = " _  _  _  _  _  _  _  _  _ " +
-                        "| || || || || || || || || |" +
+    val lineOfNumbers = " _  _  _  _  _  _  _  _  _ \n" +
+                        "| || || || || || || || || |\n" +
                         "|_||_||_||_||_||_||_||_||_|"
 
-    parser.parse(parser.multipleNumbers, lineOfNumbers).get shouldBe "000000000"
+    parser.parse(parser.accountNumber, lineOfNumbers) match {
+      case parser.Success(result, next) => result shouldBe "000000000"
+      case parser.NoSuccess(r, e) => fail(s"$r : $e")
+    }
   }
 
   "chunk lists into smaller lists" in {
